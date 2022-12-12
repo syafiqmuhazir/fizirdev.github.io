@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;500;700;800&display=swap");
+
+:root {
+  --background: #fbfcfe;
+  --primary: #9fb2d9;
+  --secondary: #e1e8f6;
+  --hover: #b4c5e6;
+  --br: #797575;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pacifico";
+  background-color: var(--background);
+}
+/* Navbar */
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: var(--background);
+  z-index: 9999;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+nav .nav-link {
+  font-family: "Pacifico";
+  text-decoration: none;
+  color: black;
+}
+nav .active {
+  color: var(--primary);
+}
+nav .nav-link:hover {
+  color: var(--hover);
+}
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.hero img {
+  width: 400px;
+  height: 260px;
+}
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero h1 {
+  text-align: right;
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 2.5em;
+}
+.hero p {
+  font-family: "Raleway";
+  width: 350px;
+  text-align: right;
+}
+/* About */
+.about-content {
+  padding: 20vh 0;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary);
+}
+.about p {
+  color: white;
+  font-size: 28px;
+  width: 70%;
+}
+.about .img-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+}
+.skill-card{
+position: relative;
+top: -80px;
+  width: 600px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+}
+.g-skill {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.my-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.my-skill img:hover {
+  transform: rotate(360deg);
+  transition: all 2s cubic-bezier(0.73, 0.19, 0.46, 1.73);
+  cursor: pointer;
+}
+.my-skill img {
+  height: 60px;
+  width: 60px;
+}
+.my-skill p {
+  padding-top: 8px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.project h1{
+color: var(--primary);
+}
+.content-project{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.card-project{
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 170px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.card-project a{
+  color: black;
+  text-decoration: none;
+}
+.img-project{
+  margin-top: 1rem;
+  width: 100%;
+}
+/* kontak */
+.kontak {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+.kontak h1 {
+  font-weight: 400;
+}
+.kontak .isi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.isi .medsos {
+  background-color: var(--primary);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  height: 220px;
+}
+.medsos a {
+  display: block;
+  padding-top: 20px;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+a img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.medsos a:hover {
+  color: var(--secondary);
+  transition: all 1s;
+}
+.isi .pesan {
+  width: 50%;
+}
+.pesan input {
+  height: 35px;
+}
+.pesan .input-control {
+  width: 90%;
+  margin-top: 12px;
+  padding: 5px 10px;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  font-family: "Raleway";
+  color: var(--primary);
+  font-weight: bold;
+}
+.pesan .input-control:focus {
+  outline: none;
+}
+.textarea {
+  height: 200px;
+  resize: vertical;
+}
+.btn {
+  font-family: "Pacifico";
+  background-color: var(--primary);
+  color: white;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+}
+.footer {
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+.footer p {
+  color: white;
+  font-family: "Pacifico";
+  font-size: 14px;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .text {
+    width: 90%;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .about-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .about p {
+    width: 90%;
+    font-size: 28px;
+  }
+  .skill-card {
+    top: -30px;
+    width: 90%;
+  }
+  .my-skill p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero .text {
+    width: 90%;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+  }
+  .kontak .isi {
+    flex-direction: column;
+  }
+  .isi .pesan {
+    width: 80%;
+  }
+  .content-project{
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-project{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero img {
+    width: 200px;
+    height: 150px;
+  }
+  .about p {
+    width: 90%;
+    font-size: 12px;
+  }
+}

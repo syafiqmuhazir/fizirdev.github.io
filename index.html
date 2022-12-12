@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hello, I'm Syafiq Muhazir" />
+    <meta name="keywords" content="Syafiq Muhazir website" />
+    <link rel="shortcut icon" href="./img/icon/img-1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Syafiq Muhazir</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div class="brand"><h3>Syafiq Muhazir</h3></div>
+      <ul>
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li><a class="nav-link" href="#project">Project</a></li>
+        <li><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <!-- end nav -->
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero" id="home">
+        <img src="./img/hero.png" alt="hero" />
+        <div class="text">
+          <h1>Hello, I'm Syafiq Muhazir</h1>
+          <p>
+            Selamat datang di web saya. Silahkan scroll ke bawah untuk melihat
+            selengkapnya.
+          </p>
+        </div>
+      </section>
+      <!-- end hero -->
+      <!-- about -->
+      <section class="about" id="tentang">
+        <div class="about-content">
+          <p>
+            "Saya adalah mahasiswa Teknik Informatika yang antusias dan
+            bermotivasi tinggi dengan kemampuan kepemimpinan, problem solving,
+            inisiatif dan mencari tantangan baru. Berpengalaman dalam berbagai
+            organisasi internal maupun eksternal kampus."
+          </p>
+          <img class="img-foto" src="./img/profil.jpg" />
+        </div>
+        <div class="skill">
+          <div class="skill-card">
+            <h1>My Skill</h1>
+            <!-- grup skill 1 -->
+            <div class="g-skill">
+              <div class="my-skill">
+                <img src="./img/icon/html.png" alt="" />
+                <p>HTML</p>
+              </div>
+              <div class="my-skill">
+                <img src="./img/icon/css-3.png" alt="" />
+                <p>CSS</p>
+              </div>
+              <div class="my-skill">
+                <img src="./img/icon/js.png" alt="" />
+                <p>Javascript</p>
+              </div>
+              <div class="my-skill">
+                <img src="./img/icon/java.png" alt="" />
+                <p>Java</p>
+              </div>
+            </div>
+            <!-- grup skill 2 -->
+            <div class="g-skill">
+              <div class="my-skill">
+                <img src="./img/icon/php.png" alt="" />
+                <p>php</p>
+              </div>
+              <div class="my-skill">
+                <img src="./img/icon/web-design.png" alt="" />
+                <p>Design</p>
+              </div>
+              <div class="my-skill">
+                <img src="./img/icon/photography.png" alt="" />
+                <p>pothography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+      <section class="project">
+        <h1 id="project">Project</h1>
+        <div class="content-project">
+          <div class="card-project">
+            <a href="https://syafiqmuhazir.github.io/landingpage/Nusantara/"
+              >Landingpage</a
+            >
+            <img class="img-project" src="./img/Nusantara.PNG" alt="" />
+          </div>
+          <div class="card-project">
+            <a href="https://syafiqmuhazir.github.io/landingpage/header/"
+              >Landingpage</a
+            >
+            <img class="img-project" src="./img/header.PNG" alt="" />
+          </div>
+          <div class="card-project">
+            <a href="https://syafiqmuhazir.github.io/countdown">Countdown</a>
+            <img class="img-project" src="./img/coutdown.PNG" alt="" />
+          </div>
+          <div class="card-project">
+            <a href="https://syafiq-todo-app.web.app/">To Do React Js</a>
+            <img class="img-project" src="./img/todo.PNG" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="kontak">
+        <h1 id="kontak">Kontak</h1>
+        <div class="isi">
+          <div class="medsos">
+            <h4>Media Sosial</h4>
+            <a target="_blank" href="https://www.facebook.com/syafiq.muhazir/"
+              ><img src="./img/icon/fb.svg" alt="" />Syafiq Muhazir</a
+            >
+            <a target="_blank" href="https://www.instagram.com/syafiqmuhazir"
+              ><img src="./img/icon/ig.svg" alt="" />syafiqmuhazir</a
+            >
+            <a target="_blank" href="https://www.github.com/syafiqmuhazir"
+              ><img
+                src="./img/icon/github.svg"
+                alt=""
+              />syafiqmuhazir.github.io</a
+            >
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCxIywsiQ5VQ4vzfeP4atEWQ"
+              ><img src="./img/icon/yt.svg" alt="" />Syafiq Muhazir</a
+            >
+          </div>
+          <div class="pesan">
+            <h4>Pesan</h4>
+            <form name="pmForm" id="pmForm" method="post">
+              <input
+                name="nama"
+                id="nama"
+                type="text"
+                placeholder="Nama"
+                class="input-control"
+              />
+              <input
+                name="subject"
+                id="subject"
+                type="text"
+                placeholder="Subject"
+                class="input-control"
+              />
+              <textarea
+                name="pesan"
+                id="pesan"
+                placeholder="Pesan"
+                class="input-control textarea"
+              ></textarea>
+              <input
+                class="btn"
+                type="button"
+                value="Kirim"
+                onclick="sendMail()"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <p>Design By Fizirnesia</p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
